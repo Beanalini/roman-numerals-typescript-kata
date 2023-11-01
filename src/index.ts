@@ -1,2 +1,2 @@
-import { add } from "./calc";
-console.log(add(2, 2));
+import { numToRomanNumeral } from "./roman-numerals";
+console.log(numToRomanNumeral(3000));
