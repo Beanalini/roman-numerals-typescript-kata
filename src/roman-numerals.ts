@@ -6,7 +6,7 @@
 //use math floor to round down to nearest whole number
 //ignore quotient 0
 //if quotient > 0  add  roman numeral at current index n times defined by value of quotient.
-//subtract baseNum from input number use % mod divide by basenum to get remainder
+//subtract baseNum from input number use % modulus divide by basenum to get remainder
 //decrement index
 
 export function numToRomanNumeral(inputNum: number): string | undefined {
