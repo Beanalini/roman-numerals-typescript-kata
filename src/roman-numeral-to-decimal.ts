@@ -27,7 +27,7 @@ export function romanNumeralToDecimal(romanInput: string): number {
   for (let i = 0; i < romanInput.length; i++) {
     let currentMap = romanMap[romanInput[i]];
     let nextMap = romanMap[romanInput[i + 1]];
-    i + 1 === romanInput.length || currentMap >= nextMap
+    nextMap === undefined || currentMap >= nextMap
       ? (count += currentMap)
       : (count -= currentMap);
   }
