@@ -28,6 +28,11 @@ export function romanNumeralToDecimal(romanInput: string): number {
       continue;
     }
 
+    if (romanMap[romanInput[i]] < romanMap[romanInput[i + 1]]) {
+      count -= romanMap[romanInput[i]];
+      continue;
+    }
+
     //last element reached
     if (i + 1 === romanInput.length) count += romanMap[romanInput[i]];
   }

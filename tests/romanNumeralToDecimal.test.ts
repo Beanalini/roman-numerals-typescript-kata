@@ -20,4 +20,11 @@ describe("romanToNumeral()", () => {
     expect(romanNumeralToDecimal("DC")).toEqual(600);
     expect(romanNumeralToDecimal("MD")).toEqual(1500);
   });
+  test("Tests subtractive classes of roman numeral groupings", () => {
+    expect(romanNumeralToDecimal("IV")).toEqual(4);
+    expect(romanNumeralToDecimal("IX")).toEqual(9);
+    expect(romanNumeralToDecimal("MCM")).toEqual(1900);
+    expect(romanNumeralToDecimal("XLIX")).toEqual(49);
+    expect(romanNumeralToDecimal("XIV")).toEqual(14);
+  });
 });
