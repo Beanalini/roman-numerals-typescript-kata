@@ -18,5 +18,9 @@ const romanMap: RomanMap = {
 } as const;
 
 export function romanNumeralToDecimal(romanInput: string): number {
-  return romanMap[romanInput[0]];
+  let count = 0;
+  for (let i = 0; i < romanInput.length; i++) {
+    count += romanMap[romanInput[i]];
+  }
+  return count;
 }
