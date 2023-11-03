@@ -21,7 +21,10 @@ const romanMap: RomanMap = {
   M: 1000,
 } as const;
 
-export function romanNumeralToDecimal(romanInput: string): number {
+export function romanNumeralToDecimal(romanInput: string | undefined): number {
+  if (romanInput === "" || romanInput === undefined)
+    throw new Error("Roman numeral string is required");
+
   let count = 0;
 
   for (let i = 0; i < romanInput.length; i++) {

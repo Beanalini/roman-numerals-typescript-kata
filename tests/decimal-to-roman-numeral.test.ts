@@ -1,4 +1,4 @@
-import { numToRomanNumeral } from "../src/roman-numerals";
+import { numToRomanNumeral } from "../src/decimal-to-roman-numerals";
 describe("Converts a decimal number into the roman numeral number ", () => {
   // test("throws an error if not passed a number", () => {
   //   expect(() => {

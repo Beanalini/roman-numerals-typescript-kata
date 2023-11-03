@@ -27,4 +27,9 @@ describe("romanToNumeral()", () => {
     expect(romanNumeralToDecimal("XLIX")).toEqual(49);
     expect(romanNumeralToDecimal("XIV")).toEqual(14);
   });
+  test("String is empty or undefined", () => {
+    expect(() => {
+      romanNumeralToDecimal(""); //act
+    }).toThrow("Roman numeral string is required"); //assert
+  });
 });
